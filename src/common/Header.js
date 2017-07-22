@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import { Row, Col } from 'react-bootstrap';
 import 'font-awesome/css/font-awesome.css';
+import { NavBar } from './NavBar';
 
 const IconColumnLink = props =>
   <Col xs={12} sm={3} lg={2}>
@@ -35,27 +36,6 @@ const PhoneIconColumnLink = () =>
     </div>
   </Col>;
 
-const NavBar = () => 
-  <nav className="header-nav-bar" role="navigation">
-    <ul>
-      <li className="page_item page-item-350">
-        <a href="get-to-know-us-offer">&#8220;Get To Know Us&#8221; Offer!</a>
-      </li>
-      <li className="page_item page-item-280">
-        <a href="about-us">About Us</a>
-      </li>
-      <li className="page_item page-item-480">
-        <a href="disability-care">Disability Support</a>
-      </li>
-      <li className="page_item page-item-2">
-        <a href="get-started">Get Started With Our Home Care Services</a>
-      </li>
-      <li className="page_item page-item-200">
-        <a href="our-services">What We Provide</a>
-      </li>
-    </ul>
-  </nav>
-
 export const Header = () => 
   <div className="app-header-container">
     <Row>
@@ -70,6 +50,8 @@ export const Header = () =>
       <PhoneIconColumnLink />
     </Row>
     <Row>
-      <NavBar />
+      <div className="header-nav-bar">
+        <NavBar />
+      </div>
     </Row>
   </div>;

@@ -1,5 +1,7 @@
+@import "../variables";
+
 .app-header-container:not(.spacer) [class^="col"] {
-  border-top: solid 1px #E9EDF1;
+  border-top: solid 1px $line-color;
   padding-top: 1rem;
   margin-top: 1.5rem;
 }
@@ -16,31 +18,29 @@
     float: left;
     margin-right: 10px;
     padding: 5px;
-    color: #c1c1c1;
-    background-color: #f4f4f4;
-    box-shadow: 1px 1px 2px 1px #c1c1c1;
+    color: $shadow-color;
+    background-color: $icon-background-color;
+    box-shadow: 1px 1px 2px 1px $shadow-color;
     border-radius: 5px;
     width: 4.2rem;
     height: 4.2rem;
     transition: all 200ms ease-out;
 
     &:hover {
-      background-color: #00b1c5;
-      color: white;
+      background-color: $primary;
+      color: $white;
     }
 
     &.fa-facebook {
       font-size: 2rem;
       padding-top: 12px;
     }
-
   }
-
 
   &-phone {
     display: inline-block;
-    background-color: #00b1c5;
-    box-shadow: 1px 1px 2px 1px #c1c1c1;
+    background-color: $primary;
+    box-shadow: 1px 1px 2px 1px $shadow-color;
     border-radius: 5px;
     height: 4.2rem;
     width: 14rem;
@@ -53,7 +53,7 @@
     }
 
     a {
-      color: white;
+      color: $white;
       font-size: 1.2rem;
     
       &:hover {
@@ -69,7 +69,6 @@
         font-weight: bold;
       }
     }
-
   }
 
   &__container {
@@ -80,11 +79,11 @@
       margin-bottom: 0;
       font-size: 13px;
       font-weight: bold;
-      color: #676b6f;
+      color: $mild-grey;
     }
 
     &--sub-title {
-      color: #a6acb3;
+      color: $light-grey;
       font-size: 12px;
     }
   }
@@ -93,7 +92,7 @@
 .header-nav-bar {
   display: none;
   margin-top: 1.5rem;
-  border-top: solid 1px #E9EDF1;
+  border-top: solid 1px $line-color;
 
   ul {
     list-style-type: none;
@@ -103,14 +102,14 @@
       display: inline-block;
 
       a {
-        color: #676b6f;
+        color: $mild-grey;
         display: block;
         text-align: center;
         padding: 16px 16px 0;
 
         &:hover {
           text-decoration: none;
-          color: #00b1c5;
+          color: $primary;
         }
       }
     }

@@ -2,21 +2,15 @@ import React from 'react';
 import './Tiles.css';
 
 const Tile = ({tile}) =>
-  <div className="tile">
-    <h4 className="title">
+  <a className="flex-item" href={tile.header.link}>
+    <div className="heading">
       <i className={`fa fa-${tile.header.icon}`}></i> 
-      <a href={tile.header.link}>{tile.header.text}</a>
-    </h4>
+      {tile.header.text}
+    </div>
     <div className="description">{tile.description}</div>
-  </div>;
+  </a>;
 
 export const Tiles = ({tiles}) =>
-  <div className="flex-container">
-    {
-      tiles.map(tile => 
-        <div className="flex-item">
-          <Tile tile={tile} />
-        </div>
-      )
-    }
+  <div className="home-tiles flex-container">
+    {tiles.map(tile => <Tile tile={tile} />)}
   </div>;

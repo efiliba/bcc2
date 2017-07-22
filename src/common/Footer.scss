@@ -1,5 +1,22 @@
+@import "../variables";
+
 .app-footer-container {
-  background-color: #00b1c5;
-  height: 150px;
-  padding: 20px
+  background-color: $black;
+  padding: 20px;
+  text-align: left;
+
+  img {
+    width: 100%;
+  }
+
+  .contact-us {
+
+  }
+
+  .footer-nav-bar {
+
+    & li:hover {
+      color: $white;
+    }
+  }
 }
