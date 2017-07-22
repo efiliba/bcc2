@@ -56,7 +56,7 @@ const NavBar = () =>
     </ul>
   </nav>
 
-export const Header = props => 
+export const Header = () => 
   <div className="app-header-container">
     <Row>
       <Col lg={1} className="spacer" />

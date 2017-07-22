@@ -1,0 +1,128 @@
+.app-header-container:not(.spacer) [class^="col"] {
+  border-top: solid 1px #E9EDF1;
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.header-icon {
+  display: inline-block;
+  min-width: 170px;
+
+  &-facebook {
+    display: inline-block;
+  }
+
+  &__icon {
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    color: #c1c1c1;
+    background-color: #f4f4f4;
+    box-shadow: 1px 1px 2px 1px #c1c1c1;
+    border-radius: 5px;
+    width: 4.2rem;
+    height: 4.2rem;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      background-color: #00b1c5;
+      color: white;
+    }
+
+    &.fa-facebook {
+      font-size: 2rem;
+      padding-top: 12px;
+    }
+
+  }
+
+
+  &-phone {
+    display: inline-block;
+    background-color: #00b1c5;
+    box-shadow: 1px 1px 2px 1px #c1c1c1;
+    border-radius: 5px;
+    height: 4.2rem;
+    width: 14rem;
+    padding: 1rem 2rem 0 2rem;
+    transition: opacity 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    a {
+      color: white;
+      font-size: 1.2rem;
+    
+      &:hover {
+        text-decoration: none;
+      }
+
+      i {
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+
+      span{
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  &__container {
+    text-align: left;
+
+    &--title {
+      padding-top: 3px;
+      margin-bottom: 0;
+      font-size: 13px;
+      font-weight: bold;
+      color: #676b6f;
+    }
+
+    &--sub-title {
+      color: #a6acb3;
+      font-size: 12px;
+    }
+  }
+}
+
+.header-nav-bar {
+  display: none;
+  margin-top: 1.5rem;
+  border-top: solid 1px #E9EDF1;
+
+  ul {
+    list-style-type: none;
+    font-size: 14px;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: #676b6f;
+        display: block;
+        text-align: center;
+        padding: 16px 16px 0;
+
+        &:hover {
+          text-decoration: none;
+          color: #00b1c5;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .app-header-container:not(.spacer) [class^="col"] {
+    border-top: none;
+  }
+
+  .header-nav-bar {
+    display: block;
+  }
+}
