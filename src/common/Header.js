@@ -4,6 +4,8 @@ import { Row, Col } from 'react-bootstrap';
 import 'font-awesome/css/font-awesome.css';
 import { NavBar } from './NavBar';
 
+import logo from '../images/logo.png';
+
 const IconColumnLink = props =>
   <Col xs={12} sm={3} lg={2}>
     <div className="header-icon">
@@ -41,7 +43,7 @@ export const Header = () =>
     <Row>
       <Col lg={1} className="spacer" />
       <Col xs={12} lg={2} className="header-logo">
-        <a href="home"><img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Best Choice Care" /></a>
+        <a href="home"><img src={logo} alt="Best Choice Care" /></a>
       </Col>
       <Col xs={0} sm={1} lg={2} className="spacer" />
       <IconColumnLink link="/" icon="home" title="We Are Located" subTitle="in and around Sydney" />

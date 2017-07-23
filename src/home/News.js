@@ -5,7 +5,7 @@ const Tile = ({article}) =>
   <div className="flex-item">
     <img
       className="article-image"
-      src={`${process.env.PUBLIC_URL}/images/${article.image.source}`}
+      src={`../images/${article.image.source}`}
       alt={article.image.text}
     />
     <a className="article-heading" href={article.link}><h4>{article.heading}</h4></a>

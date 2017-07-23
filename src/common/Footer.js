@@ -3,11 +3,13 @@ import './Footer.css';
 import { Row, Col } from 'react-bootstrap';
 import { NavBar } from './NavBar';
 
+import logo_on_dark from '../images/logo_on_dark.png';
+
 export const Footer = props => 
   <div className="app-footer-container">
     <Row>
       <Col xs={12}>
-        <img src={`${process.env.PUBLIC_URL}/images/logo_on_dark.png`} alt="Best Choice Care logo" />
+        <img src={logo_on_dark} alt="Best Choice Care logo" />
         <div className="footer-text-container">
           <div className="footer-nav-bar">
             <div className="footer-nav-bar__header">

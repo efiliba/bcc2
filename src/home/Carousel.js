@@ -25,12 +25,12 @@ const BootstrapCarousel = React.createClass({
             <Carousel.Item>
               <img
                 className="carosel-image"
-                src={`${process.env.PUBLIC_URL}/images/${slide.image.source}`}
+                src={`../images/${slide.image.source}`}
                 alt={slide.image.alternate}
               />
               <Carousel.Caption>
                 {slide.caption && slide.caption.heading}
-                { slide.caption && slide.caption.anchor &&
+                {slide.caption && slide.caption.anchor &&
                   <a href={slide.caption.anchor.link}>{slide.caption.anchor.text}</a>
                 }
               </Carousel.Caption>

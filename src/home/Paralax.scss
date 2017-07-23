@@ -1,0 +1,63 @@
+@import "../variables";
+
+.home-paralax-container {
+  .home-paralax-scroll-image {
+    background-image: url(./../images/nurse_thumbs_up.png);
+    background-size: cover;
+    padding: 9rem 0;
+    background-position: center center;
+  }
+
+  .home-paralax-stationary-image {
+    background-image: url(./../images/amber-TEXT.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    background-position: center center;
+
+    .row {
+      color: $white;
+      width: 92%;
+      margin: 0 auto;
+      max-width: 110rem;
+
+      a {
+        display: inline-block;
+        padding: 1.2rem 2rem;
+        background-color: $secondary;
+        color: $white;
+        margin-top: 3rem;
+        border-radius: 3px;
+
+        &:hover {
+          text-decoration: none;
+          background-color: $primary;          
+        }
+      }
+    }
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    margin-bottom: 2rem;
+    color: $primary;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .description {
+    font-size: 120%;
+  }
+}

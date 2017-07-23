@@ -3,6 +3,7 @@ import './HomeContainer.css';
 import { Row, Col } from 'react-bootstrap';
 import { Carousel } from './Carousel';
 import { Tiles } from './Tiles';
+import { Paralax } from './Paralax';
 import { News } from './News';
 
 const slides = [{
@@ -146,5 +147,6 @@ export const HomeContainer = props =>
   <div className="home-container">
     <Carousel slides={slides} />
     <Tiles tiles={tiles} />
+    <Paralax />
     <News articles={articles} />
   </div>;
