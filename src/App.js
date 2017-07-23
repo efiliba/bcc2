@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Grid fluid className="app">
         <Header />
-        <HomeContainer />
+        <HomeContainer /> 
         <Footer />
       </Grid>
     );
