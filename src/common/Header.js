@@ -9,7 +9,7 @@ import logo from '../images/logo.png';
 const IconColumnLink = props =>
   <Col xs={12} sm={3} lg={2}>
     <div className="header-icon">
-      <a href={props.link} target="_blank">
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
         <i className={`header-icon__icon fa fa-${props.icon} fa-2x`} />
       </a>
       <div className="header-icon__container">
@@ -22,7 +22,7 @@ const IconColumnLink = props =>
 const FacebookIconColumnLink = () =>
   <Col xs={12} sm={2} lg={1}>
     <div className="header-icon-facebook">
-      <a href="https://www.facebook.com/bestchoicecare.com.au" target="_blank">
+      <a href="https://www.facebook.com/bestchoicecare.com.au" target="_blank" rel="noopener noreferrer">
         <i className="header-icon__icon fa fa-facebook fa-2x" />
       </a>
     </div>

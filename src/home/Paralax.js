@@ -24,15 +24,17 @@ export const Paralax = props =>
     <div className="home-paralax-stationary-image">
       <Row>
         <Col xs={12}>
-          <h4 className="title">
-            LIVE IN YOUR OWN HOME, ON YOUR OWN TERMS
-          </h4>
-          <div className="description">
-            Best Choice Care is simply not like other agencies. Here the power is always given to you, the client. Your needs and your
-            family's wishes will always come first and we will do everything in our power to customise our services in
-            a way that allows you to live life while being granted the freedom, safety and hassle-free care that you deserve.
+          <div className="home-paralax-stationary-image__text">
+            <h4 className="title">
+              LIVE IN YOUR OWN HOME, ON YOUR OWN TERMS
+            </h4>
+            <div className="description">
+              Best Choice Care is simply not like other agencies. Here the power is always given to you, the client. Your needs and your
+              family's wishes will always come first and we will do everything in our power to customise our services in
+              a way that allows you to live life while being granted the freedom, safety and hassle-free care that you deserve.
+            </div>
           </div>
-          <a className="thbt_more" href="http://bestchoicecare.com.au/get-started/">How To Get Started Today</a>
+          <a href="get-started" alt="Get Started">How To Get Started Today</a>
         </Col>
       </Row>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const NavBar = () => 
-  <nav role="navigation">
+  <nav>
     <ul>
       <li>
         <a href="aged-care">Aged Care</a>

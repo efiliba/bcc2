@@ -17,6 +17,6 @@ export const News = ({articles}) =>
   <div className="home-news">
     <h2>News & Articles</h2>
     <div className="flex-container">
-      {articles.map(article => <Tile article={article} />)}
+      {articles.map((article, index) => <Tile article={article} key={`article${index}`} />)}
     </div>
   </div>;

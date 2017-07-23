@@ -2,27 +2,34 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Carousel.css';
 
-const BootstrapCarousel = React.createClass({
+class BootstrapCarousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = this.getInitialState();
+
+    this.handleSelect = this.handleSelect.bind(this);
+  }
+
   getInitialState() {
     return {
       index: 0,
       direction: null
     };
-  },
+  }
 
   handleSelect(selectedIndex, e) {
     this.setState({
       index: selectedIndex,
       direction: e.direction
     });
-  },
+  }
 
   render() {
     return (
       <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect}>
         {
-          this.props.slides.map(slide =>
-            <Carousel.Item>
+          this.props.slides.map((slide, index) =>
+            <Carousel.Item key={`slide${index}`}>
               <img
                 className="carosel-image"
                 src={`../images/${slide.image.source}`}
@@ -40,6 +47,6 @@ const BootstrapCarousel = React.createClass({
       </Carousel>
     );
   }
-});
+}
 
 export { BootstrapCarousel as Carousel };

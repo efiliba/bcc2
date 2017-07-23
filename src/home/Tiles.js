@@ -12,5 +12,5 @@ const Tile = ({tile}) =>
 
 export const Tiles = ({tiles}) =>
   <div className="home-tiles flex-container">
-    {tiles.map(tile => <Tile tile={tile} />)}
+    {tiles.map((tile, index) => <Tile tile={tile} key={`tile${index}`} />)}
   </div>;

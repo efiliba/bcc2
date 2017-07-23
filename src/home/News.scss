@@ -70,16 +70,12 @@
           color: $white;
         }
       }
-    }
 
-    @media (min-width: 627px) {
-      .flex-item {
+      @media (min-width: 627px) {
         min-width: 40%;
       }
-    }
-    
-    @media (min-width: 1237px) {
-      .flex-item {
+      
+      @media (min-width: 1237px) {
         min-width: 30%;
       }
     }
