@@ -1,6 +1,7 @@
 import React from 'react';
 import './Paralax.css';
 import { Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const Paralax = props => 
   <div className="home-paralax-container">
@@ -34,7 +35,7 @@ export const Paralax = props =>
               a way that allows you to live life while being granted the freedom, safety and hassle-free care that you deserve.
             </div>
           </div>
-          <a href="get-started" alt="Get Started">How To Get Started Today</a>
+          <Link to="get-started">How To Get Started Today</Link>
         </Col>
       </Row>
     </div>

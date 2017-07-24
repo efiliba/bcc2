@@ -50,7 +50,7 @@
 }, {
   "header": {
     "icon": "medkit",
-    "link": "help-at-home",
+    "link": "medication-reminder",
     "text": "Medication Reminders"
   },
   "description": "We take your health seriously and provide enforced reminders to ensure that your medication is never missed."

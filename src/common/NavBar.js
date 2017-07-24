@@ -1,25 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import navigation_links from '../navigation_links.json';
 
 export const NavBar = () => 
   <nav>
     <ul>
-      <li>
-        <a href="aged-care">Aged Care</a>
-      </li>
-      <li>
-        <a href="disability-care">Disability Support</a>
-      </li>
-      <li>
-        <a href="private-home-care">Private Home Care</a>
-      </li>
-      <li>
-        <a href="our-services">Our Services</a>
-      </li>
-      <li>
-        <a href="get-started">Get Started</a>
-      </li>
-      <li>
-        <a href="about-us">About Us</a>
-      </li>
+      {
+        navigation_links.map((link, index) => 
+          <li key={`link${index}`}>
+            <Link to={link.to}>{link.text}</Link>
+          </li>
+        )
+      }
     </ul>
   </nav>
