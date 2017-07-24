@@ -5,8 +5,7 @@ import { Header } from './common/Header';
 import { Footer } from './common/Footer';
 import { HomeContainer } from './home/HomeContainer';
 import { BrowserRouter, Route } from 'react-router-dom';
-
-const AgedCare = props => <h1>AgedCare Page<br />Under Construction</h1>;
+import { AgedCare } from './aged_care/AgedCare';
 
 class App extends Component {
   render() {
