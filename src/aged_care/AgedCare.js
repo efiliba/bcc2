@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './AgedCare.css';
 import { ServicesWeProvideTiles } from './ServicesWeProvideTiles';
+import { GetStarted } from './GetStarted';
 
 import services_we_provide_tiles from '../services_we_provide_tiles.json';
 import stay_at_home from '../images/stay_at_home.png';
@@ -37,10 +38,5 @@ export const AgedCare = props =>
   <div className="aged-care-container">
     <StayAtHome />
     <ServicesWeProvide />
+    <GetStarted />
   </div>;
-
-
-    // <img src={help_at_home} alt="Help At Home" />
-    // <img src={personal_care} alt="Personal Care" />
-    // <img src={social_support} alt="Social Support" />
-
