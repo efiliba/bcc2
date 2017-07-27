@@ -15,7 +15,7 @@ function FieldGroup({id, label, help, ...props}) {
 
 export const ContactUsForm = ({fields: {name, phone, email, request}, submitted, handleSubmit}) =>
   <section id='contactUsForm'>
-    <form className="contact-us-form" onSubmit={handleSubmit}>
+    <form className="contact-us-form" onSubmit={() => {debugger; handleSubmit()}}>
       <h3 className='contact-us-form__title'>Contact Us</h3>
       {submitted && <div className="contact-us-form__submitted-message alert alert-success">Your request has been submitted, we will contact you shortly.</div>}
       <FieldGroup
