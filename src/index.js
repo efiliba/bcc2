@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { Provider } from 'react-redux';
 import { fromJS } from 'immutable';
-import configureStore from './configureStore';
+import configureStore from './redux/configureStore';
 
 const store = configureStore(fromJS(window.__INITIAL_STATE__));
 // const store = configureStore({form: 'Initial State'});

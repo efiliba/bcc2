@@ -33,11 +33,12 @@ const combineImmutableReducers = (/*navigationReducer*/) => {
   const reducers = combineReducers({
     // nav_links: navigationReducer,
     form: formReducer.plugin({                  // Add plugin to formReducer
-      contactUsForm,                            //    to clear the form
+      contactUsForm                             //    to clear the form
     })
   });
 
-  return (state = {}, action) => IMap(reducers(
-    IMap.isMap(state) ? state.toObject() : state, action
-  ));
+  return (state = {}, action) => reducers(state, action);
+  // return (state = {}, action) => IMap(
+  //   reducers(IMap.isMap(state) ? state.toObject() : state, action)
+  // );
 };
