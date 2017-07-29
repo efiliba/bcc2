@@ -1,13 +1,14 @@
 import * as ActionTypes from './actions/actionTypes';
-import { reset } from 'redux-form';
+// import { reset } from 'redux-form';
 import fetch from 'isomorphic-fetch';
 import { apiUrl } from '../config';
 
 export const saveContactRequest = data => dispatch => {
   dispatch({
-    type: ActionTypes.CONTACT_REQUEST_SAVED
+    type: ActionTypes.CONTACT_REQUEST_SAVED,
+    data
   });
-  dispatch(reset('contactUsForm'));             // Clear form data
+  // dispatch(reset('contactUsForm'));             // Clear form data
 };
 
 export const saveContactRequest2 = data => dispatch => fetch(`${apiUrl}/saveContactRequest`, {

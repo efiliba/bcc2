@@ -1,6 +1,6 @@
-export const onContactUsSaved = state => ({
-  submitted: true,
-  request: {
-    value: ''                                   // textarea values have to be explicitly cleared
-  }
-});
+import {Map as IMap} from 'immutable';
+
+export const INITIAL_SITE_STATE = new IMap();
+
+export const onContactUsSaved = (state, data) =>
+  state.set('data', data);

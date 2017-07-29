@@ -3,15 +3,13 @@ import { Map as IMap } from 'immutable';
 import { reducer as formReducer } from 'redux-form';
 import thunk from 'redux-thunk';
 
-// import rootReducer from './reducers';
-
-import { contactUsForm } from './reducers/formPluginReducers';
+import { siteReducer, contactUsForm } from './reducers';
 
 export default initialState => {
   const composeEnhancers = (window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
   const storeBuilder = composeEnhancers(applyMiddleware(thunk));
 
-  const reducers = combineImmutableReducers(/*navigationReducer*/);
+  const reducers = combineImmutableReducers(siteReducer);
   const store = storeBuilder(createStore)(reducers, initialState);
 
   // if (module.hot) {
@@ -29,16 +27,16 @@ export default initialState => {
   return store;
 };
 
-const combineImmutableReducers = (/*navigationReducer*/) => {
+const combineImmutableReducers = site => {
   const reducers = combineReducers({
-    // nav_links: navigationReducer,
+    site,
     form: formReducer.plugin({                  // Add plugin to formReducer
       contactUsForm                             //    to clear the form
     })
   });
 
-  return (state = {}, action) => reducers(state, action);
-  // return (state = {}, action) => IMap(
-  //   reducers(IMap.isMap(state) ? state.toObject() : state, action)
-  // );
+  // return (state = {}, action) => reducers(state, action);
+  return (state = {}, action) => IMap(
+    reducers(IMap.isMap(state) ? state.toObject() : state, action)
+  );
 };

@@ -10,13 +10,16 @@ const FieldGroup = ({children, id, label, help}) =>
     {help && <HelpBlock>{help}</HelpBlock>}
   </FormGroup>;
 
-export const ContactUsForm = ({pristine, submitting, submitted, handleSubmit, reset}) =>
+export const ContactUsForm = ({pristine, submitting, submitSucceeded, anyTouched, handleSubmit, reset}) =>
   <section id='contactUsForm'>
-    <form className="contact-us-form" onSubmit={handleSubmit}>
+     <form className="contact-us-form" onSubmit={handleSubmit}> 
       <h3 className='contact-us-form__title'>Contact Us</h3>
-      {submitted && <div className="contact-us-form__submitted-message alert alert-success">Your request has been submitted, we will contact you shortly.</div>}
-      <FieldGroup id="contactUsName" className='contact-us-form__name' label="Name" help="Please enter your full name">
-        <Field name="name" type="text" component="input" placeholder="Enter Name" />
+      {submitSucceeded && !anyTouched && <div className="contact-us-form__submitted-message alert alert-success">Your request has been submitted, we will contact you shortly.</div>}
+      <FieldGroup id="contactUsFirstName" className='contact-us-form__first_name' label="First Name" help="Please enter your first name">
+        <Field name="firstName" type="text" component="input" placeholder="Enter First Name" />
+      </FieldGroup>
+      <FieldGroup id="contactUsSurname" className='contact-us-form__surname' label="Surname" help="Please enter your last name">
+        <Field name="surname" type="text" component="input" placeholder="Enter Surname" />
       </FieldGroup>
       <FieldGroup id="contactUsPhone" className='contact-us-form__phone' label="Phone">
         <Field name="phone" type="text" component="input" placeholder="Phone" />
