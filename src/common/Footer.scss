@@ -5,7 +5,7 @@
   padding: 1rem;
   color: $white;
 
-  @media (min-width: 767px) {
+   @include breakpoint(sm) {
     .footer-text-container {
       display: inline;
     }
@@ -17,12 +17,11 @@
   }
 
   .contact-us {
-    float: right;
     width: 20rem;
-    
-    &__container2 {
+    margin: 0 auto;
+
+    @include breakpoint(xs) {
       float: right;
-      padding-right: 2rem;
     }
 
     &__header {
@@ -37,7 +36,12 @@
   }
 
   .footer-nav-bar {
-    float: left;
+    width: 18rem;
+    margin: 0 auto;
+
+    @include breakpoint(xs) {
+      float: left;
+    }
 
     &__header {
       font-weight: bold;

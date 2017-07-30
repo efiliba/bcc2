@@ -3,8 +3,8 @@ import './ContactUsForm.css';
 import { FormGroup, ControlLabel, HelpBlock, Button } from 'react-bootstrap'
 import { Field } from 'redux-form';
 
-const FieldGroup = ({children, id, label, help}) =>
-  <FormGroup controlId={id}>
+const FieldGroup = ({children, id, className, label, help}) =>
+  <FormGroup controlId={id} className={className}>
     <ControlLabel>{label}</ControlLabel>
     {children}
     {help && <HelpBlock>{help}</HelpBlock>}
@@ -27,8 +27,11 @@ export const ContactUsForm = ({pristine, submitting, submitSucceeded, anyTouched
       <FieldGroup id="contactUsEmail" className='contact-us-form__email' label="Email">
         <Field name="email" type="text" component="input" placeholder="Email address" />
       </FieldGroup>
-      <FieldGroup id="contactUsRequest" className='contact-us-form__reques' label="Request" help="Please enter your message">
-        <Field name="request" component="textarea" placeholder="Enter your message here" />
+      <FieldGroup id="contactUsLocation" className='contact-us-form__location' label="Location" help="We can only service Sydney suburbs at this time.">
+        <Field name="suburb" type="text" component="input" placeholder="Suburb where care is required" />
+      </FieldGroup>
+      <FieldGroup id="contactUsRequest" className='contact-us-form__request' label="Request" help="Please enter your message">
+        <Field name="request" component="textarea" rows="10" placeholder="Enter your message here" />
       </FieldGroup>
       <Button type="submit" className="contact-us-form__submit btn btn-primary" disabled={pristine || submitting}>
         Submit

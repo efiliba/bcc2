@@ -11,7 +11,7 @@
       background-color: $white-transparent;
       padding-bottom: 1rem;
 
-      @media (min-width: 1200px) {
+      @include breakpoint(lg) {
         background-color: transparent;
       }
     }

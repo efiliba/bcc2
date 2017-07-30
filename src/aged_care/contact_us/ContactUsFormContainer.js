@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 
 import { ContactUsForm } from './ContactUsForm';
-import { saveContactRequest } from '../redux/actionCreators';
+import { saveContactRequest } from '../../redux/actionCreators';
 
 const config = {
   form: 'contactUsForm',                        // Unique name for the form

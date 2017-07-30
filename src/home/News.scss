@@ -71,11 +71,11 @@
         }
       }
 
-      @media (min-width: 627px) {
+      @include breakpoint(xs) {
         min-width: 40%;
       }
-      
-      @media (min-width: 1200px) {
+
+      @include breakpoint(lg) {
         min-width: 30%;
       }
     }

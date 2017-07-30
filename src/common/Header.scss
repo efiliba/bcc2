@@ -10,7 +10,7 @@
   .header-logo img {
     max-width: 100%;
 
-    @media (min-width: 1200px) {
+    @include breakpoint(lg) {
       max-width: initial;
     }
   }
@@ -126,7 +126,7 @@
     }
   }
 
-  @media (min-width: 627px) {
+  @include breakpoint(xs) {
     &:not(.spacer) [class^="col"] {
       border-top: none;
     }

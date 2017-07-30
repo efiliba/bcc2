@@ -1,7 +1,7 @@
 import React from 'react';
 import './GetStarted.css';
 import { Row, Col } from 'react-bootstrap';
-import ContactUsForm from './ContactUsFormContainer';
+import ContactUsForm from './contact_us/ContactUsFormContainer';
 
 export const GetStarted = () =>
   <Row className="get-started">
@@ -11,10 +11,10 @@ export const GetStarted = () =>
       <ContactUsForm />
     </Col>
     <Col xs={12} sm={6}>
-      <h3>3 Easy Steps To Get Started</h3>
+      <h4>3 Easy Steps To Get Started</h4>
       <ol>
         <li>Call us on 1300 407 705 or email us to book a free consultation</li>
-        <li>We will come to your home and discuss you individual care needs and make a care plan and answer any questions you have.</li>
+        <li>We will come to your home and discuss your individual care needs and make a care plan and answer any questions you have.</li>
         <li>Our qualified carers will then start your services after we have orientated them to your needs.</li>
       </ol>
     </Col>

@@ -1,8 +1,9 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import './AgedCare.css';
+import { Row, Col } from 'react-bootstrap';
 import { ServicesWeProvideTiles } from './ServicesWeProvideTiles';
 import { GetStarted } from './GetStarted';
+import { Testimonials } from './Testimonials';
 
 import services_we_provide_tiles from '../services_we_provide_tiles.json';
 import stay_at_home from '../images/stay_at_home.png';
@@ -39,4 +40,5 @@ export const AgedCare = props =>
     <StayAtHome />
     <ServicesWeProvide />
     <GetStarted />
+    <Testimonials />
   </div>;
