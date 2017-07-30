@@ -2,22 +2,17 @@ import React from 'react';
 import './Testimonials.css';
 import { Row, Col } from 'react-bootstrap';
 
-const Testimonial = ({image, clientName, message}) =>
-  <Row className="testimonial-container">
-    <Col xs={12} sm={6}>
-      <div className='testimonial__image'>
-        <img src={`../images/${image}`} alt={clientName} />
-      </div>
-    </Col>
-    <Col xs={12} sm={6}>
-      <div className='testimonial__message'>
-        {message}
-      </div>
-    </Col>
-  </Row>;
+const Testimonial = ({testimonial}) =>
+  <div className="testimonial-container">
+    <div className='testimonial__image'>
+      <img src={`../images/${testimonial.image}`} alt={testimonial.clientName} />
+    </div>
+    <div className='testimonial__message'>
+      {testimonial.message}
+    </div>
+  </div>;
 
-export const Testimonials = () =>
+export const Testimonials = ({testimonials}) =>
   <div className='testimonials-container'>
-    <Testimonial image='personal_care.png' clientName='Eli' message="Leslie is much loved, but doesn't want a back rub" />
-    <Testimonial image='help_at_home.png' clientName='Silvia' message='Leslie is the best' />
+    {testimonials.map((testimonial, index) => <Testimonial key={`testimonial${index}`} testimonial={testimonial} />)}
   </div>

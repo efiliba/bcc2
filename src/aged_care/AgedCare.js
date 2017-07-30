@@ -6,6 +6,7 @@ import { GetStarted } from './GetStarted';
 import { Testimonials } from './Testimonials';
 
 import services_we_provide_tiles from '../services_we_provide_tiles.json';
+import testimonials from '../testimonials.json';
 import stay_at_home from '../images/stay_at_home.png';
 
 const StayAtHome = () =>
@@ -29,16 +30,16 @@ const StayAtHome = () =>
     </Row>
   </div>;
 
-const ServicesWeProvide = () =>
+const ServicesWeProvide = ({tiles}) =>
   <div className="services-we-provide-container">
     <h2>Services We Provide</h2>
-    <ServicesWeProvideTiles tiles={services_we_provide_tiles} />
+    <ServicesWeProvideTiles tiles={tiles} />
   </div>;
 
 export const AgedCare = props =>
   <div className="aged-care-container">
     <StayAtHome />
-    <ServicesWeProvide />
+    <ServicesWeProvide tiles={services_we_provide_tiles} />
     <GetStarted />
-    <Testimonials />
+    <Testimonials testimonials={testimonials} />
   </div>;
