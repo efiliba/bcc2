@@ -1,0 +1,20 @@
+.home-tiles.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: #00b1c5; }
+  .home-tiles.flex-container .flex-item {
+    flex: 1;
+    min-width: 30.5rem;
+    color: #fff;
+    padding: 2.5rem;
+    text-align: left;
+    transition: 600ms linear; }
+    .home-tiles.flex-container .flex-item:hover {
+      text-decoration: none;
+      background-color: #7159a6; }
+    .home-tiles.flex-container .flex-item .heading {
+      font-size: 2.5rem;
+      padding-bottom: 2rem; }
+      .home-tiles.flex-container .flex-item .heading i {
+        padding-right: 1rem; }

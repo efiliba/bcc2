@@ -1,0 +1,19 @@
+.testimonials-container {
+  padding: 1.5rem 0; }
+  .testimonials-container .testimonial-container {
+    border: solid 1px #77787b;
+    background-color: #bcbec0; }
+    @media (min-width: 767px) {
+      .testimonials-container .testimonial-container {
+        display: flex;
+        justify-content: flex-start; } }
+    .testimonials-container .testimonial-container .testimonial__image {
+      padding: 2rem; }
+      .testimonials-container .testimonial-container .testimonial__image img {
+        border-radius: 50%; }
+    .testimonials-container .testimonial-container .testimonial__message {
+      text-align: left;
+      padding: 0 2rem 2rem; }
+      @media (min-width: 767px) {
+        .testimonials-container .testimonial-container .testimonial__message {
+          padding-top: 2rem; } }

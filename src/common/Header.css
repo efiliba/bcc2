@@ -1,0 +1,95 @@
+.app-header-container:not(.spacer) [class^="col"] {
+  border-top: solid 1px #e9edf1;
+  padding-top: 1rem;
+  margin-top: 1.5rem; }
+
+.app-header-container .header-logo img {
+  max-width: 100%; }
+  @media (min-width: 1200px) {
+    .app-header-container .header-logo img {
+      max-width: initial; } }
+
+.app-header-container .header-icon {
+  display: inline-block;
+  min-width: 17rem; }
+  .app-header-container .header-icon-facebook {
+    display: inline-block; }
+  .app-header-container .header-icon__icon {
+    float: left;
+    margin-right: 1rem;
+    padding: .5rem;
+    color: #bcbec0;
+    background-color: #f4f4f4;
+    box-shadow: 1px 1px 2px 1px #c1c1c1;
+    border-radius: 5px;
+    width: 4.2rem;
+    height: 4.2rem;
+    transition: all 200ms ease-out; }
+    .app-header-container .header-icon__icon:hover {
+      background-color: #00b1c5;
+      color: #fff; }
+    .app-header-container .header-icon__icon.fa-facebook {
+      font-size: 2rem;
+      padding-top: 1.2rem; }
+  .app-header-container .header-icon-phone {
+    display: inline-block;
+    background-color: #00b1c5;
+    box-shadow: 1px 1px 2px 1px #c1c1c1;
+    border-radius: 5px;
+    height: 4.2rem;
+    width: 14rem;
+    padding: 1rem 2rem 0 2rem;
+    margin-bottom: 2rem;
+    transition: opacity 200ms ease-out; }
+    .app-header-container .header-icon-phone:hover {
+      cursor: pointer;
+      opacity: .7; }
+    .app-header-container .header-icon-phone a {
+      color: #fff;
+      font-size: 1.2rem; }
+      .app-header-container .header-icon-phone a:hover {
+        text-decoration: none; }
+      .app-header-container .header-icon-phone a i {
+        margin-right: .5rem;
+        vertical-align: middle; }
+      .app-header-container .header-icon-phone a span {
+        font-weight: bold; }
+  .app-header-container .header-icon__container {
+    text-align: left; }
+    .app-header-container .header-icon__container--title {
+      padding-top: .3rem;
+      margin-bottom: 0;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #77787b; }
+    .app-header-container .header-icon__container--sub-title {
+      color: #bcbec0;
+      font-size: 1.2rem; }
+
+.app-header-container .header-nav-bar {
+  display: none;
+  margin-top: 1.5rem;
+  border-top: solid 1px #e9edf1; }
+  .app-header-container .header-nav-bar ul {
+    list-style-type: none;
+    font-size: 1.4rem; }
+    .app-header-container .header-nav-bar ul li {
+      display: inline-block; }
+      .app-header-container .header-nav-bar ul li a {
+        color: #77787b;
+        display: block;
+        text-align: center;
+        padding: 1.6rem 1.6rem 0; }
+        .app-header-container .header-nav-bar ul li a:hover {
+          text-decoration: none;
+          color: #00b1c5; }
+
+@media (min-width: 627px) {
+  .app-header-container:not(.spacer) [class^="col"] {
+    border-top: none; }
+  .app-header-container .header-nav-bar {
+    display: block; }
+  .app-header-container .header-logo img {
+    width: initial; }
+  .app-header-container .header-icon-phone {
+    margin-bottom: 0; } }

@@ -1,0 +1,55 @@
+.home-paralax-container .home-paralax-scroll-image {
+  background-image: url(./../images/nurse_thumbs_up.png);
+  background-size: cover;
+  padding: 9rem 0;
+  background-position: center center; }
+  .home-paralax-container .home-paralax-scroll-image [class^=col]:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 1rem; }
+    @media (min-width: 1200px) {
+      .home-paralax-container .home-paralax-scroll-image [class^=col]:nth-child(2) {
+        background-color: transparent; } }
+
+.home-paralax-container .home-paralax-stationary-image {
+  background-image: url(./../images/amber-TEXT.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  background-position: center center; }
+  .home-paralax-container .home-paralax-stationary-image__text {
+    background-color: rgba(119, 120, 123, 0.5); }
+  .home-paralax-container .home-paralax-stationary-image .row {
+    color: #fff;
+    width: 92%;
+    margin: 0 auto;
+    max-width: 110rem; }
+    .home-paralax-container .home-paralax-stationary-image .row a {
+      display: inline-block;
+      padding: 1.2rem 2rem;
+      background-color: #7159a6;
+      color: #fff;
+      margin-top: 3rem;
+      border-radius: 3px; }
+      .home-paralax-container .home-paralax-stationary-image .row a:hover {
+        text-decoration: none;
+        background-color: #00b1c5; }
+
+.home-paralax-container .row {
+  margin: 0; }
+
+.home-paralax-container .title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.2; }
+
+.home-paralax-container .subtitle {
+  margin-bottom: 2rem;
+  color: #00b1c5;
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 10px; }
+
+.home-paralax-container .description {
+  font-size: 120%; }

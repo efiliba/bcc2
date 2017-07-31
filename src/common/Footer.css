@@ -1,0 +1,42 @@
+.app-footer-container {
+  background-color: #222;
+  padding: 1rem;
+  color: #fff; }
+  @media (min-width: 767px) {
+    .app-footer-container .footer-text-container {
+      display: inline; } }
+  .app-footer-container img {
+    max-height: 10rem;
+    margin-bottom: 2rem; }
+  .app-footer-container .contact-us {
+    width: 20rem;
+    margin: 0 auto; }
+    @media (min-width: 627px) {
+      .app-footer-container .contact-us {
+        float: right; } }
+    .app-footer-container .contact-us__header {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #00b1c5; }
+    .app-footer-container .contact-us__address {
+      font-size: 1.4rem; }
+  .app-footer-container .footer-nav-bar {
+    width: 18rem;
+    margin: 0 auto; }
+    @media (min-width: 627px) {
+      .app-footer-container .footer-nav-bar {
+        float: left; } }
+    .app-footer-container .footer-nav-bar__header {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #00b1c5; }
+    .app-footer-container .footer-nav-bar nav {
+      text-align: left; }
+      .app-footer-container .footer-nav-bar nav a {
+        color: #fff; }
+        .app-footer-container .footer-nav-bar nav a:hover {
+          text-decoration: none;
+          color: #00b1c5; }
+  .app-footer-container .copyright {
+    font-size: 1rem;
+    color: #00b1c5; }
