@@ -11,7 +11,7 @@
 
 .app-header-container .header-icon {
   display: inline-block;
-  min-width: 17rem; }
+  min-width: 19rem; }
   .app-header-container .header-icon-facebook {
     display: inline-block; }
   .app-header-container .header-icon__icon {
@@ -37,7 +37,7 @@
     box-shadow: 1px 1px 2px 1px #c1c1c1;
     border-radius: 5px;
     height: 4.2rem;
-    width: 14rem;
+    width: 15rem;
     padding: 1rem 2rem 0 2rem;
     margin-bottom: 2rem;
     transition: opacity 200ms ease-out; }
@@ -67,6 +67,7 @@
       font-size: 1.2rem; }
 
 .app-header-container .header-nav-bar {
+  font-weight: bold;
   display: none;
   margin-top: 1.5rem;
   border-top: solid 1px #e9edf1; }
@@ -93,3 +94,26 @@
     width: initial; }
   .app-header-container .header-icon-phone {
     margin-bottom: 0; } }
+
+.fixed-enquire-button {
+  background-color: #00b1c5;
+  box-shadow: -1px 0px 3px 1px #77787b;
+  border-radius: 5px 5px 0 0;
+  padding: .5rem 1.5rem;
+  transition: background-color 200ms ease-out;
+  z-index: 1;
+  transform: rotate(270deg);
+  position: fixed;
+  right: -3.75rem; }
+  .fixed-enquire-button:hover {
+    background-color: #7159a6; }
+  .fixed-enquire-button a {
+    color: #fff;
+    font-size: 1.2rem; }
+    .fixed-enquire-button a:hover {
+      text-decoration: none; }
+    .fixed-enquire-button a i {
+      padding-left: 1rem;
+      vertical-align: middle; }
+    .fixed-enquire-button a span {
+      font-weight: bold; }

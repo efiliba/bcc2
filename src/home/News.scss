@@ -2,6 +2,7 @@
 
 .home-news {
   h2 {
+    color: $secondary;
     text-transform: uppercase;
     font-weight: bold;
 
@@ -14,6 +15,16 @@
     }
   }
 
+  @include breakpoint(md) {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }  
+
+  @include breakpoint(lg) {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }  
+  
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -55,19 +66,21 @@
       a.article-link {
         font-size: 12px;
         padding: 9px 12px;
-        background-color: $icon-background-color;
+        background-color: $primary;
+        border-radius: 5px;
         text-transform: uppercase;
         color: inherit;
         display: inline-block;
         position: absolute;
         bottom: 2rem;
         left: 2rem;
+        transition: opacity 200ms ease-out;
+        color: $white;
 
         &:hover {
           text-decoration: none;
+          opacity: .7;
           cursor: pointer;
-          background-color: $primary;
-          color: $white;
         }
       }
 

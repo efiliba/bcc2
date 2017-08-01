@@ -9,7 +9,6 @@
     max-height: 10rem;
     margin-bottom: 2rem; }
   .app-footer-container .contact-us {
-    width: 20rem;
     margin: 0 auto; }
     @media (min-width: 627px) {
       .app-footer-container .contact-us {
@@ -21,7 +20,6 @@
     .app-footer-container .contact-us__address {
       font-size: 1.4rem; }
   .app-footer-container .footer-nav-bar {
-    width: 18rem;
     margin: 0 auto; }
     @media (min-width: 627px) {
       .app-footer-container .footer-nav-bar {

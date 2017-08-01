@@ -39,6 +39,14 @@ const PhoneIconColumnLink = () =>
     </div>
   </Col>;
 
+const FixedEnquireButton = () =>
+  <div className="fixed-enquire-button">
+    <Link to='/'>
+      <span>Enquire</span>
+      <i className="fa fa-envelope fa-2x" />
+    </Link>
+  </div>;
+
 export const Header = () => 
   <div className="app-header-container">
     <Row>
@@ -59,4 +67,5 @@ export const Header = () =>
         <NavBar />
       </div>
     </Row>
+    <FixedEnquireButton />
   </div>;
