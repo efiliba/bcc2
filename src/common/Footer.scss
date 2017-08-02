@@ -4,6 +4,7 @@
   background-color: $black;
   padding: 1rem;
   color: $white;
+  // margin: 0 -15px;
 
    @include breakpoint(sm) {
     .footer-text-container {
@@ -35,6 +36,7 @@
   }
 
   .footer-nav-bar {
+    width: 20rem;
     margin: 0 auto;
 
     @include breakpoint(xs) {

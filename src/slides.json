@@ -1,17 +1,17 @@
 [{
   "image": {
-    "source": "slider-2-1400x520.png",
-    "alternate": "Second slide"
-  },
-  "caption": {
-    "heading": "Live Safely In Your Own Home"
-  }
-}, {
-  "image": {
     "source": "disability-slider-2--1400x520.png",
     "alternate": "Third slide"
   },
   "caption": {
     "heading": "Live Comfortably On Your Own Terms"
+  }
+}, {
+  "image": {
+    "source": "slider-2-1400x520.png",
+    "alternate": "Second slide"
+  },
+  "caption": {
+    "heading": "Live Safely In Your Own Home"
   }
 }]

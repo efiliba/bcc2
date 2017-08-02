@@ -4,12 +4,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: center;
 
   .flex-item {
     flex: 1;
-    max-width: 30%;
-    min-width: 30rem;
+    max-width: 30rem;
     margin: 1.5rem;
     text-align: center;
     position: relative;
@@ -45,13 +44,13 @@
       .service-tile__description {
         text-align: left;
         color: $black;
-        padding: 0 1rem 6rem;
+        padding: 1rem 2rem 6rem;
       }
        
       .service-tile__more {
         position: absolute;
         bottom: 2rem;
-        left: 1rem;
+        left: 2rem;
         color: $black;
         text-decoration: underline;
       }

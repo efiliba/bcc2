@@ -1,13 +1,13 @@
 [{
   "clientName": "Eli",
-  "image": "personal_care.png",
+  "image": "personal_care.jpg",
   "message": "Leslie is much loved, but doesn't want a back rub"
 }, {
   "clientName": "Daniel",
-  "image": "help_at_home.png",
+  "image": "help_at_home.jpg",
   "message": "What can I say about Best Choice Care? Let me count the ways 1, 2, 3, ... The name says it all; they realy are the best and the service is outstanding, so there really is no choice, if you want the best. Let me re-emphasise: What can I say about Best Choice Care? Let me count the ways 1, 2, 3, ... The name says it all; they realy are the best and the service is outstanding, so there really is no choice, if you want the best"
 }, {
   "clientName": "Silvia",
-  "image": "social_support.png",
+  "image": "social_support.jpg",
   "message": "Leslie is the best."
 }]

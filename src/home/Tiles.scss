@@ -8,11 +8,15 @@
 
   .flex-item {
     flex: 1;
-    min-width: 30.5rem;
+    min-width: 32rem;
     color: $white;
     padding: 2.5rem;
     text-align: left;
     transition: 600ms linear;
+
+    @include breakpoint(xs) {
+      min-width: 35rem;
+    }
 
     &:hover {
       text-decoration: none; 
